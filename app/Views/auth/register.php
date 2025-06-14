@@ -4,7 +4,7 @@
 <div class="register-box">
   <div class="card card-outline card-primary">
     <div class="card-header text-center">
-      <a href="<?= base_url() ?>" class="h1"><b>Press</b>Starter</a>
+      <a href="<?= base_url() ?>" class="h1"><b>Berita</b>tor</a>
     </div>
     <div class="card-body">
       <p class="login-box-msg">Daftar akun baru</p>
@@ -124,4 +124,3 @@
 </div>
 <!-- /.register-box -->
 <?= $this->endSection() ?>
-

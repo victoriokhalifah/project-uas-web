@@ -11,7 +11,7 @@ class UserSeeder extends Seeder
         $data = [
             [
                 'username'   => 'admin',
-                'email'      => 'admin@pressstarter.com',
+                'email'      => 'admin@beritator.com',
                 'password'   => password_hash('admin123', PASSWORD_DEFAULT),
                 'full_name'  => 'Administrator',
                 'role'       => 'admin',
@@ -21,7 +21,7 @@ class UserSeeder extends Seeder
             ],
             [
                 'username'   => 'editor',
-                'email'      => 'editor@pressstarter.com',
+                'email'      => 'editor@beritator.com',
                 'password'   => password_hash('editor123', PASSWORD_DEFAULT),
                 'full_name'  => 'Editor Utama',
                 'role'       => 'editor',
@@ -31,7 +31,7 @@ class UserSeeder extends Seeder
             ],
             [
                 'username'   => 'wartawan',
-                'email'      => 'wartawan@pressstarter.com',
+                'email'      => 'wartawan@beritator.com',
                 'password'   => password_hash('wartawan123', PASSWORD_DEFAULT),
                 'full_name'  => 'Wartawan Senior',
                 'role'       => 'wartawan',

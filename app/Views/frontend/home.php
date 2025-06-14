@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-8">
-                <h1 class="display-4 fw-bold mb-3">PressStarter</h1>
+                <h1 class="display-4 fw-bold mb-3">Beritator</h1>
                 <p class="lead mb-4">Portal Berita Terpercaya dengan Informasi Terkini dan Akurat</p>
                 <div class="d-flex gap-3 flex-wrap">
                     <a href="#latest-news" class="btn btn-light btn-lg smooth-scroll">
@@ -274,108 +274,6 @@
         onclick="scrollToTop()">
     <i class="fas fa-arrow-up"></i>
 </button>
-<?= $this->endSection() ?>
-
-<?= $this->section('styles') ?>
-<style>
-.hero-section {
-    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
-}
-
-.featured-news .news-image {
-    height: 300px;
-}
-
-.news-image {
-    height: 200px;
-    object-fit: cover;
-}
-
-.news-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: none;
-}
-
-.news-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
-}
-
-.category-btn {
-    padding: 1rem;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 0.9rem;
-    transition: all 0.3s ease;
-    border: 2px solid #007bff;
-}
-
-.category-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 15px rgba(0,123,255,0.3);
-    background-color: #007bff;
-    color: white;
-}
-
-.category-btn i {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
-
-.quick-search {
-    transition: all 0.2s ease;
-}
-
-.quick-search:hover {
-    background-color: #007bff;
-    color: white;
-    border-color: #007bff;
-}
-
-.category-badge:hover {
-    background-color: #0056b3 !important;
-}
-
-.read-more-btn {
-    transition: all 0.2s ease;
-}
-
-.read-more-btn:hover {
-    background-color: #007bff;
-    color: white;
-    border-color: #007bff;
-}
-
-.smooth-scroll {
-    scroll-behavior: smooth;
-}
-
-#backToTopBtn {
-    transition: all 0.3s ease;
-}
-
-#backToTopBtn:hover {
-    transform: scale(1.1);
-}
-
-.news-title-link:hover {
-    color: #007bff !important;
-}
-
-@media (max-width: 768px) {
-    .category-btn {
-        height: 70px;
-        font-size: 0.8rem;
-    }
-    
-    .featured-news .news-image {
-        height: 250px;
-    }
-}
-</style>
 <?= $this->endSection() ?>
 
 <?= $this->section('scripts') ?>

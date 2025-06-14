@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title><?= $title ?? 'PressStarter' ?> | Admin Panel</title>
+  <title><?= $title ?? 'Beritator' ?> | Admin Panel</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -13,13 +13,167 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
   <!-- Summernote -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css">
+  
+  <!-- Custom Red Theme -->
+  <style>
+    /* Primary Red Color Scheme */
+    .main-header.navbar-white {
+      background-color: #dc3545 !important;
+      border-bottom: 1px solid #c82333;
+    }
+    
+    .main-header .navbar-nav .nav-link {
+      color: rgba(255,255,255,.8) !important;
+    }
+    
+    .main-header .navbar-nav .nav-link:hover {
+      color: #fff !important;
+    }
+    
+    .main-sidebar {
+      background-color: #721c24 !important;
+    }
+    
+    .main-sidebar .brand-link {
+      background-color: #dc3545 !important;
+      border-bottom: 1px solid #c82333;
+    }
+    
+    .main-sidebar .brand-text {
+      color: #fff !important;
+    }
+    
+    .sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link.active {
+      background-color: #dc3545 !important;
+      color: #fff !important;
+    }
+    
+    .sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link:hover {
+      background-color: rgba(220, 53, 69, 0.3) !important;
+      color: #fff !important;
+    }
+    
+    .btn-primary {
+      background-color: #dc3545 !important;
+      border-color: #dc3545 !important;
+    }
+    
+    .btn-primary:hover {
+      background-color: #c82333 !important;
+      border-color: #bd2130 !important;
+    }
+    
+    .btn-outline-primary {
+      color: #dc3545 !important;
+      border-color: #dc3545 !important;
+    }
+    
+    .btn-outline-primary:hover {
+      background-color: #dc3545 !important;
+      border-color: #dc3545 !important;
+      color: #fff !important;
+    }
+    
+    .card-primary .card-header {
+      background-color: #dc3545 !important;
+      border-color: #dc3545 !important;
+    }
+    
+    .card-outline.card-primary {
+      border-top: 3px solid #dc3545 !important;
+    }
+    
+    .text-primary {
+      color: #dc3545 !important;
+    }
+    
+    .bg-primary {
+      background-color: #dc3545 !important;
+    }
+    
+    .badge-primary {
+      background-color: #dc3545 !important;
+    }
+    
+    .alert-primary {
+      background-color: #f8d7da !important;
+      border-color: #f5c6cb !important;
+      color: #721c24 !important;
+    }
+    
+    .nav-pills .nav-link.active {
+      background-color: #dc3545 !important;
+    }
+    
+    .page-link {
+      color: #dc3545 !important;
+    }
+    
+    .page-item.active .page-link {
+      background-color: #dc3545 !important;
+      border-color: #dc3545 !important;
+    }
+    
+    .form-control:focus {
+      border-color: #dc3545 !important;
+      box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25) !important;
+    }
+    
+    .custom-control-input:checked ~ .custom-control-label::before {
+      background-color: #dc3545 !important;
+      border-color: #dc3545 !important;
+    }
+    
+    /* Small boxes colors */
+    .small-box.bg-info {
+      background-color: #dc3545 !important;
+    }
+    
+    .small-box.bg-success {
+      background-color: #28a745 !important;
+    }
+    
+    .small-box.bg-warning {
+      background-color: #ffc107 !important;
+    }
+    
+    .small-box.bg-danger {
+      background-color: #6f42c1 !important;
+    }
+    
+    .small-box.bg-primary {
+      background-color: #007bff !important;
+    }
+    
+    .small-box.bg-secondary {
+      background-color: #6c757d !important;
+    }
+    
+    .small-box.bg-dark {
+      background-color: #343a40 !important;
+    }
+    
+    /* Links */
+    a {
+      color: #dc3545 !important;
+    }
+    
+    a:hover {
+      color: #c82333 !important;
+    }
+    
+    /* Preloader */
+    .preloader {
+      background-color: #dc3545 !important;
+    }
+  </style>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
 
   <!-- Preloader -->
   <div class="preloader flex-column justify-content-center align-items-center">
-    <img class="animation__shake" src="<?= base_url('assets/img/logo.png') ?>" alt="PressStarter" height="60" width="60">
+    <img class="animation__shake" src="<?= base_url('assets/img/logo.png') ?>" alt="Beritator" height="60" width="60">
   </div>
 
   <!-- Navbar -->
@@ -60,8 +214,8 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="<?= base_url('admin/dashboard') ?>" class="brand-link">
-      <img src="<?= base_url('assets/img/logo.png') ?>" alt="PressStarter" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">PressStarter</span>
+      <img src="<?= base_url('assets/img/logo.png') ?>" alt="Beritator" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">Beritator</span>
     </a>
 
     <!-- Sidebar -->
@@ -72,7 +226,7 @@
           <?php if (session()->get('avatar')): ?>
             <img src="<?= base_url('uploads/avatars/' . session()->get('avatar')) ?>" class="img-circle elevation-2" alt="User Image">
           <?php else: ?>
-            <img src="https://via.placeholder.com/160x160/28a745/fff?text=<?= substr(session()->get('full_name'), 0, 1) ?>" class="img-circle elevation-2" alt="User Image">
+            <img src="https://via.placeholder.com/160x160/dc3545/fff?text=<?= substr(session()->get('full_name'), 0, 1) ?>" class="img-circle elevation-2" alt="User Image">
           <?php endif; ?>
         </div>
         <div class="info">
@@ -200,7 +354,7 @@
   <!-- /.content-wrapper -->
 
   <footer class="main-footer">
-    <strong>Copyright &copy; <?= date('Y') ?> <a href="#">PressStarter</a>.</strong>
+    <strong>Copyright &copy; <?= date('Y') ?> <a href="#">Beritator</a>.</strong>
     All rights reserved.
     <div class="float-right d-none d-sm-inline-block">
       <b>Version</b> 1.0.0
@@ -251,4 +405,3 @@ $(document).ready(function() {
 
 </body>
 </html>
-

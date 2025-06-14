@@ -5,7 +5,7 @@
   <!-- /.login-logo -->
   <div class="card card-outline card-primary">
     <div class="card-header text-center">
-      <a href="<?= base_url() ?>" class="h1"><b>Press</b>Starter</a>
+      <a href="<?= base_url() ?>" class="h1"><b>Berita</b>tor</a>
     </div>
     <div class="card-body">
       <p class="login-box-msg">Masuk untuk memulai sesi Anda</p>
@@ -83,9 +83,9 @@
       <div class="text-center mt-3">
         <p class="mb-1">
           <small class="text-muted">Demo Accounts:</small><br>
-          <small>Admin: admin@pressstarter.com / admin123</small><br>
-          <small>Editor: editor@pressstarter.com / editor123</small><br>
-          <small>Wartawan: wartawan@pressstarter.com / wartawan123</small>
+          <small>Admin: admin@beritator.com / admin123</small><br>
+          <small>Editor: editor@beritator.com / editor123</small><br>
+          <small>Wartawan: wartawan@beritator.com / wartawan123</small>
         </p>
       </div>
     </div>
@@ -95,4 +95,3 @@
 </div>
 <!-- /.login-box -->
 <?= $this->endSection() ?>
-
